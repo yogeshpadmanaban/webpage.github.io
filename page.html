@@ -1,69 +1,12 @@
 <html>
     <head>
         <title>page</title>
-<style>
-    h1{
-        text-align: center;
-        color:darkblue;
-    }
-    
-    #img{
-        float: right;
-        padding: 20px 120px 20px 20px;
-    }
-    
-    table{
-        display: block;
-        color:blueviolet;
-        align-content: center;
-        
+        <link rel="stylesheet" type="text/css" href="pagecss.css"></style>
+        <script src="page.js"></script>
+                
+           
+   
 
-    }
-    #container{
-        margin: opx;
-       
-        border: 5px;
-
-    }
-    
-    #header{
-        width:100%;
-        height: 20%;
-        background-color:gainsboro
-    }
-    #left{
-        float:left;
-        width:20%;
-        height:60%;
-        background-color:gray;
-        color:wheat;
-        font-size: 22px;
-
-
-    }
-    #right{
-        float:right;
-        width:20%;
-        height:60%;
-        background-color:gray;
-        color:wheat;
-        font-size: 22px;
-        
-
-    }
-    #content{
-        width:80%;
-        height: 60%;
-        background-color:azure
-        
-        
-    }
-    #footer{
-        background-color:gainsboro;
-        height: 20%;
-    }
-    
-</style>
     </head>
     <body>
         
@@ -95,7 +38,7 @@
                             </ul>
                 </div>
                 <div id="content">
-                    <form>
+                    <form name="page" method="POST" action="" onsubmit="check()"> 
                      
                             <table cellspacing=2 cellpading=2 border="0" > 
                                 <tr><th><h1>LOGIN</h1></th></tr>
@@ -104,7 +47,7 @@
                                         <h2>E-mail</h2>
                                     </td>
                                     <td>
-                                        <input type="text" name="txt1">
+                                        <input type="email"  name="txt1" >
                                     </td>
                                 </tr>
                                 <tr>
@@ -112,7 +55,7 @@
                                             <h2>password</h2>
                                         </td>
                                         <td>
-                                            <input type="password" name="pass">
+                                            <input type="password" name="pass" >
                                         </td>
                                 </tr>
                                 <tr>
